@@ -2,19 +2,19 @@ package br.com.generation.listaheranca;
 
 public class Cavalo extends Animal {
 
-	private String velocidade;
+	private float velocidade;
 
-	public void correr (float velocidade) {
-		System.out.println(this.getNome() + "está correndo a " + this.velocidade + "km/h" );
+	public void correr () {
+		System.out.println(this.getNome() + " está correndo a " + this.velocidade + " km/h");
 	}
 	
 	//getter e setter
 	
-	public String getVelocidade() {
+	public float getVelocidade() {
 		return velocidade;
 	}
 
-	public void setVelocidade(String velocidade) {
+	public void setVelocidade(float velocidade) {
 		this.velocidade = velocidade;
 	}
 }
